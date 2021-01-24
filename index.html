@@ -19,7 +19,7 @@
   </head>
   <body>
     <!-- Шапка сайта -->
-    <header class="header">
+    <!-- <header class="header">
       <div class="container">
         <nav class="nav">
           <a href="index.html" class="logo">
@@ -62,7 +62,7 @@
           </ul>
         </address>
       </div>
-    </header>
+    </header> -->
 
     <main>
       <!-- HERO -->
@@ -83,7 +83,7 @@
         <div class="container">
           <h2 class="about-title visually-hidden">Наши преимущества</h2>
           <ul class="about-list">
-            <li class="about-list-item list">
+            <li class="about-list-item">
               <div class="about-list-item-img">
                 <svg class="about-list-icon" width="70" height="70">
                   <use href="./images/sprite.svg#icon-antenna"></use>
@@ -95,7 +95,7 @@
                 формированию позиции.
               </p>
             </li>
-            <li class="about-list-item list">
+            <li class="about-list-item">
               <div class="about-list-item-img">
                 <svg class="about-list-icon" width="70" height="70">
                   <use href="./images/sprite.svg#icon-clock"></use>
@@ -107,7 +107,7 @@
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="about-list-item list">
+            <li class="about-list-item">
               <div class="about-list-item-img">
                 <svg class="about-list-icon" width="70" height="70">
                   <use href="./images/sprite.svg#icon-diagram"></use>
@@ -119,7 +119,7 @@
                 степени обуславливает.
               </p>
             </li>
-            <li class="about-list-item list">
+            <li class="about-list-item">
               <div class="about-list-item-img">
                 <svg class="about-list-icon" width="70" height="70">
                   <use href="./images/sprite.svg#icon-astronaut"></use>
@@ -179,14 +179,36 @@
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list">
-            <li class="team-list-item list">
-              <img
-                src="./images/main/igor.jpg"
-                width="270"
-                height="260"
-                alt="фото Игорь Демьяненко"
-                class="team-list-item-img"
-              />
+            <li class="team-list-item">
+              <picture class="team-list-item-picture">
+                <source
+                  srcset="
+                    ./images/main/team/igor-desktop.jpg    1x,
+                    ./images/main/team/igor-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/team/igor-tablet.jpg    1x,
+                    ./images/main/team/igor-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/team/igor-mobile.jpg    1x,
+                    ./images/main/team/igor-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/main/team/igor-tablet.jpg"
+                  alt="фото Игорь Демьяненко"
+                  class="team-list-item-img"
+                />
+              </picture>
+
               <h3 class="team-list-item-title">Игорь Демьяненко</h3>
               <p lang="en" class="team-list-item-description">
                 Product Designer
@@ -222,14 +244,37 @@
                 </li>
               </ul>
             </li>
-            <li class="team-list-item list">
-              <img
-                src="./images/main/olga.jpg"
-                class="team-list-item-img"
-                width="270"
-                height="260"
-                alt="фото Ольги Репиной"
-              />
+            <li class="team-list-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/team/olga-desktop.jpg    1x,
+                    ./images/main/team/olga-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/team/olga-mobile.jpg    1x,
+                    ./images/main/team/olga-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/team/olga-tablet.jpg    1x,
+                    ./images/main/team/olga-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <img
+                  src="./images/main/team/olga-mobile.jpg"
+                  class="team-list-item-img"
+                  alt="фото Ольги Репиной"
+                />
+              </picture>
+
               <h3 class="team-list-item-title">Ольга Репина</h3>
               <p lang="en" class="team-list-item-description">
                 Frontend Developer
@@ -266,14 +311,37 @@
                 </li>
               </ul>
             </li>
-            <li class="team-list-item list">
-              <img
-                src="./images/main/nikola.jpg"
-                class="team-list-item-img"
-                width="270"
-                height="260"
-                alt="фото Николая Тарасова"
-              />
+            <li class="team-list-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/team/kolya-desktop.jpg    1x,
+                    ./images/main/team/kolya-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/team/kolya-mobile.jpg    1x,
+                    ./images/main/team/kolya-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/team/kolya-tablet.jpg    1x,
+                    ./images/main/team/kolya-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <img
+                  src="./images/main/team/kolya-mobile.jpg"
+                  class="team-list-item-img"
+                  alt="фото Николая Тарасова"
+                />
+              </picture>
+
               <h3 class="team-list-item-title">Николай Тарасов</h3>
               <p lang="en" class="team-list-item-description">Marketing</p>
               <ul class="social-list">
@@ -307,14 +375,37 @@
                 </li>
               </ul>
             </li>
-            <li class="team-list-item list">
-              <img
-                src="./images/main/mickael.jpg"
-                class="team-list-item-img"
-                width="270"
-                height="260"
-                alt="фото Михаила Ермакова"
-              />
+            <li class="team-list-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/team/mike-desktop.jpg    1x,
+                    ./images/main/team/mike-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/team/mike-mobile.jpg    1x,
+                    ./images/main/team/mike-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/team/mike-tablet.jpg    1x,
+                    ./images/main/team/mike-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <img
+                  src="./images/main/team/mike-mobile.jpg"
+                  class="team-list-item-img"
+                  alt="фото Михаила Ермакова"
+                />
+              </picture>
+
               <h3 class="team-list-item-title">Михаил Ермаков</h3>
               <p lang="en" class="team-list-item-description">UI Designer</p>
               <ul class="social-list">
@@ -409,28 +500,26 @@
       <div class="container">
         <ul class="footer-list">
           <li class="footer-list-item">
-            <p class="footer-logo"><span class="logo-acent">Web</span>Studio</p>
+            <p class="footer logo"><span class="logo-acent">Web</span>Studio</p>
             <address class="footer-adr">
               <ul class="footer-adr-list">
-                <li class="footer-adr-list-item list">
+                <li class="footer-adr-list-item">
                   <a
                     href="https://goo.gl/maps/DtpX5w2fXkYRpDgQA"
-                    class="footer-adr-list-item-link-map link"
+                    class="footer-adr-list-item-link-map"
                   >
                     г. Киев, пр-т Леси Украинки, 26
                   </a>
                 </li>
-                <li class="footer-adr-list-item list">
+                <li class="footer-adr-list-item">
                   <a
                     href="mailto:info@example.com"
-                    class="footer-adr-list-item-link link"
+                    class="footer-adr-list-item-link"
                     >info@example.com
                   </a>
                 </li>
                 <li class="footer-adr-list-item">
-                  <a
-                    href="tel:+380991111111"
-                    class="footer-adr-list-item-link link"
+                  <a href="tel:+380991111111" class="footer-adr-list-item-link"
                     >+38 099 111 11 11</a
                   >
                 </li>
@@ -494,7 +583,7 @@
     </footer>
 
     <!-- modal window -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
           <svg width="11" height="11">
@@ -571,7 +660,7 @@
           <button type="submit" class="button">Отправить</button>
         </form>
       </div>
-    </div>
+    </div> -->
 
     <script src="JS/modal.js"></script>
   </body>
