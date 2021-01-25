@@ -3,14 +3,15 @@
   min-height: 60px;
 }
 
+.header .logo {
+  color: black;
+}
+
 .nav-list,
 .address {
   display: none;
 }
 
-.nav {
-  margin-left: 16px;
-}
 
 // .header {
 //   padding-top: 25px;
