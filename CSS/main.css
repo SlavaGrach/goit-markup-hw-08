@@ -226,7 +226,6 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.167;
-  margin: auto 0;
   letter-spacing: 0.03em;
 }
 
@@ -458,17 +457,19 @@ body {
 
 .header {
   border-bottom: 1px solid var(--header-border-color);
-  min-height: 60px;
 }
 
 .header .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 16px 0;
+  min-height: 60px;
 }
 
 .header .logo {
@@ -476,12 +477,25 @@ body {
 }
 
 .header button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   border: none;
   background-color: transparent;
   padding: 0;
   margin: 0;
-  width: 40px;
-  height: 40px;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
 }
 
 .nav-list,

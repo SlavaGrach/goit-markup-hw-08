@@ -1,12 +1,13 @@
 .header {
   border-bottom: 1px solid var(--header-border-color);
-  min-height: 60px;
+  
 }
 
 .header .nav {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 16px 0;
+  min-height: 60px;
 }
 
 .header .logo {
@@ -14,12 +15,23 @@
 }
 
 .header button {
+  display: inline-flex;
   border: none;
   background-color: transparent;
   padding: 0;
   margin: 0;
-  width: 40px;
-  height: 40px;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
 }
 
 
