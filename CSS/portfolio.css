@@ -171,6 +171,67 @@ body {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 122px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .social-list {
+    padding: 0 74px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social-list {
+    padding: 0 32px;
+  }
+}
+
+.social-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  -webkit-transition: background-color 250ms var(--cube);
+  transition: background-color 250ms var(--cube);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--acent-color);
+}
+
+.social-link-icon {
+  fill: var(--social-link-icon-color);
+  height: 20px;
+  width: 20px;
+  -webkit-transition: fill 250ms var(--cube);
+  transition: fill 250ms var(--cube);
+}
+
+.social-link:hover .social-link-icon,
+.social-link:focus .social-link-icon {
+  fill: var(--white-color);
+}
+
+.header {
+  border-bottom: 1px solid var(--header-border-color);
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .projects-list {
     display: -webkit-box;

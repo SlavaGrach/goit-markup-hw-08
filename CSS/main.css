@@ -454,6 +454,10 @@ body {
   pointer-events: none;
 }
 
+.header {
+  border-bottom: 1px solid var(--header-border-color);
+}
+
 .hero {
   text-align: center;
   padding: 118px 0;
