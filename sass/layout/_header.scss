@@ -3,14 +3,32 @@
   min-height: 60px;
 }
 
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
 .header .logo {
   color: black;
 }
+
+.header button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+}
+
 
 .nav-list,
 .address {
   display: none;
 }
+
+
 
 
 // .header {
