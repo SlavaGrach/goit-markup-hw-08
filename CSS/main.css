@@ -456,6 +456,16 @@ body {
 
 .header {
   border-bottom: 1px solid var(--header-border-color);
+  min-height: 60px;
+}
+
+.nav-list,
+.address {
+  display: none;
+}
+
+.nav {
+  margin-left: 16px;
 }
 
 .hero {
